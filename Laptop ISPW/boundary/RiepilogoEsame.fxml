@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.RiepilogoEsame">
+   <children>
+      <AnchorPane prefHeight="453.0" prefWidth="522.0">
+         <children>
+            <Text fill="#da0606" layoutX="125.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RIEPILOGO ESAME">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="59.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ORARIO:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="61.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATA:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="60.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOME CORSO:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="59.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MACROAREA:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="59.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TITOLARE PRENOTAZIONE:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="59.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SESSIONE:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="61.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AULA:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="60.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SEDUTA:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="59.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="APPELLO:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Label fx:id="aula" layoutX="358.0" layoutY="85.0" text="Label" />
+            <Label fx:id="titolarePrenotazione" layoutX="360.0" layoutY="178.0" text="Label" />
+            <Label fx:id="fasciaOraria" layoutX="358.0" layoutY="323.0" text="Label" />
+            <Label fx:id="Seduta" layoutX="358.0" layoutY="233.0" text="Label" />
+            <Label fx:id="nomeEsame" layoutX="358.0" layoutY="264.0" text="Label" />
+            <Label fx:id="macroarea" layoutX="360.0" layoutY="205.0" text="Label" />
+            <Label fx:id="Sessione" layoutX="360.0" layoutY="147.0" text="Label" />
+            <Label fx:id="Appello" layoutX="360.0" layoutY="117.0" text="Label" />
+            <Label fx:id="data" layoutX="358.0" layoutY="296.0" text="Label" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="returnButton" layoutX="111.0" layoutY="401.0" mnemonicParsing="false" onAction="#Indietro" text="INDIETRO" />
+      <Button fx:id="ConfermaButton" layoutX="335.0" layoutY="401.0" mnemonicParsing="false" onAction="#Conferma" text="CONFERMA" />
+   </children>
+</AnchorPane>

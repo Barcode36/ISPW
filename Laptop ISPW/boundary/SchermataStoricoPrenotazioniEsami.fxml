@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.SchermataStoricoPrenotazioniEsami">
+   <children>
+      <AnchorPane layoutX="252.0" layoutY="117.0" prefHeight="442.0" prefWidth="590.0" />
+      <TableView fx:id="table" layoutY="-2.0" prefHeight="499.0" prefWidth="842.0">
+        <columns>
+          <TableColumn fx:id="macroarea" prefWidth="81.0" text="MACROAREA" />
+          <TableColumn fx:id="evento" prefWidth="62.0" text="EVENTO" />
+          <TableColumn fx:id="sessione" prefWidth="66.0" text="SESSIONE" />
+          <TableColumn fx:id="appello" prefWidth="63.0" text="APPELLO" />
+            <TableColumn fx:id="seduta" prefWidth="65.0" text="SEDUTA" />
+            <TableColumn fx:id="titolare" prefWidth="84.0" text="TITOLARE" />
+            <TableColumn fx:id="aula" prefWidth="77.0" text="AULA" />
+            <TableColumn fx:id="orario" prefWidth="102.0" text="ORARIO" />
+            <TableColumn fx:id="NomeCorso" prefWidth="126.0" text="NOMECORSO" />
+            <TableColumn fx:id="data" prefWidth="115.0" text="DATA" />
+        </columns>
+      </TableView>
+      <Button fx:id="closeButton" layoutX="391.0" layoutY="508.0" mnemonicParsing="false" onAction="#chiudi" text="CHIUDI" />
+   </children>
+</AnchorPane>

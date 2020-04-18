@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.StoricoPrenotazioni">
+   <children>
+      <AnchorPane layoutX="-7.0" prefHeight="303.0" prefWidth="313.0">
+         <children>
+            <TextField fx:id="AnnoAccademico" layoutX="53.0" layoutY="127.0" prefHeight="38.0" prefWidth="222.0" promptText="esempio: 2001-2003" />
+            <Text fill="#ee0808" layoutX="43.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MENU STORICO PRENOTAZIONI">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="53.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INSERISCI ANNO ACCADEMICO">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="193.0" layoutY="218.0" mnemonicParsing="false" onAction="#visualizzaStoricoPrenotazioni" prefHeight="38.0" prefWidth="89.0" text="VISUALIZZA" />
+            <Button fx:id="closeButton" layoutX="55.0" layoutY="218.0" mnemonicParsing="false" onAction="#chiusura" prefHeight="38.0" prefWidth="89.0" text="CHIUDI" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="415.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.PrenotaEvento">
+   <children>
+      <Separator layoutY="245.0" prefHeight="1.0" prefWidth="415.0" />
+      <Separator layoutY="35.0" prefHeight="3.0" prefWidth="415.0" />
+      <Text fill="#f50202" layoutX="30.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prenotazione di un evento:" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <TextField fx:id="posti" layoutX="260.0" layoutY="66.0" promptText="es. 1-750" />
+      <Label layoutX="208.0" layoutY="69.0" text="N° Posti" />
+      <ComboBox fx:id="tipiAule" layoutX="260.0" layoutY="114.0" prefWidth="150.0" />
+      <ComboBox fx:id="lab" layoutX="260.0" layoutY="203.0" prefWidth="150.0" />
+      <Label layoutX="200.0" layoutY="119.0" text="Tipo Aula" />
+      <Label layoutX="189.0" layoutY="207.0" text="Laboratorio" />
+      <Label layoutX="36.0" layoutY="291.0" text="Evento" />
+      <DatePicker fx:id="data" layoutX="298.0" layoutY="287.0" prefHeight="25.0" prefWidth="108.0" />
+      <Label layoutX="265.0" layoutY="291.0" text="Data" />
+      <Label layoutX="8.0" layoutY="348.0" text="Fascia Oraria" />
+      <Label layoutX="18.0" layoutY="401.0" text="Macroarea" />
+      <Button fx:id="closeButtons" layoutX="25.0" layoutY="451.0" mnemonicParsing="false" onAction="#chiudi" prefHeight="25.0" prefWidth="115.0" text="INDIETRO" />
+      <Button fx:id="confermaButtons" layoutX="278.0" layoutY="449.0" mnemonicParsing="false" onAction="#PrenotaEvento2" prefHeight="25.0" prefWidth="115.0" text="AVANTI" />
+      <ComboBox fx:id="fasceOrarie" layoutX="82.0" layoutY="344.0" prefHeight="25.0" prefWidth="108.0" />
+      <ComboBox fx:id="eventi" layoutX="83.0" layoutY="287.0" prefHeight="25.0" prefWidth="108.0" />
+      <ComboBox fx:id="macroaree" layoutX="82.0" layoutY="397.0" prefHeight="25.0" prefWidth="108.0" />
+      <TextField fx:id="titoloEvento" layoutX="297.0" layoutY="344.0" prefHeight="25.0" prefWidth="108.0" promptText="Inserisci Titolo" />
+      <Label layoutX="221.0" layoutY="347.0" text="Titolo Evento" />
+      <Separator layoutX="1.0" layoutY="269.0" prefHeight="1.0" prefWidth="415.0" />
+      <Separator layoutY="56.0" prefHeight="1.0" prefWidth="415.0" />
+      <Label layoutX="51.0" layoutY="248.0" text="Informazioni Evento" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="36.0" text="Informazioni Aula" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="214.0" layoutY="400.0" text="Corso Di Studio" />
+      <TextField fx:id="CorsoStudi" layoutX="298.0" layoutY="395.0" prefHeight="25.0" prefWidth="108.0" promptText="es. Informatica" />
+      <Label layoutX="184.0" layoutY="159.0" text="N° Proiettori" />
+      <TextField fx:id="proiettore" layoutX="261.0" layoutY="156.0" promptText="es. 0-2" />
+      <RadioButton fx:id="prese" layoutX="26.0" layoutY="199.0" mnemonicParsing="false" text="Prese Individuali" />
+      <RadioButton fx:id="mic" layoutX="26.0" layoutY="165.0" mnemonicParsing="false" text="Microfono" />
+      <RadioButton fx:id="ethernet" layoutX="26.0" layoutY="136.0" mnemonicParsing="false" text="Cavo Ethernet" />
+      <RadioButton fx:id="lavInt" layoutX="27.0" layoutY="104.0" mnemonicParsing="false" text="Lavagna Interattiva" />
+      <RadioButton fx:id="lav" layoutX="28.0" layoutY="74.0" mnemonicParsing="false" text="Lavagna" />
+   </children>
+</AnchorPane>
